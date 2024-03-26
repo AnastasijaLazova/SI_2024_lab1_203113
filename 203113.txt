@@ -1,0 +1,77 @@
+4. mkdir SI_2024_lab1_203113
+	cd SI_2024_lab1_203113
+	git init
+
+5.git remote add origin https://github.com/AnastasijaLazova/SI_2024_lab1_203113.git - povrzuvanje so github
+
+6. 	notepad README.md  - dodavanje na .txt
+	git add README.md
+	git config --global user.name "203113"
+	git config --global user.email "anastasijalazova01@hotmail.com"
+	git commit -m "Initial commit" 
+
+7.git add SILab1Main.java SILab1_1.java SILab1_2.java
+	git status
+	git commit -m "Add starter code"
+
+8. git push origin master - gi prikacuvame
+
+9. git checkout master - pravime granki
+git branch bug1
+git branch bug2
+git push origin bug1
+git push origin bug2
+
+10. git checkout bug1
+
+11.notepad SILab1_1.java
+git add SILab1_1.java
+git commit -m "Fix wrong condition in filterOddLengthStrings."
+
+12. git checkout bug2
+
+13.notepad SILab1_2.java
+git add SILab1_2.java
+git commit -m "Fix wrong condition in makeBigStringFrom"
+
+14. git checkout bug1
+
+15.notepad SILab1_1.java
+git add SILab1_1.java
+git commit -m "Call method filterOddLengthStrings in main class"
+
+16.git checkout bug2
+
+17.notepad SILab1_2.java
+git add SILab1_2.java
+git commit -m "Call method makeBigStringFrom in main class"
+
+18. git push origin --all
+
+19.git checkout master
+
+20.git merge bug1
+
+21. git push origin master
+
+22. git checkout bug2
+
+23.git rebase master
+-ima konflikt
+git status
+-gi brisham HEAD >>> === <<<
+git rebase --continue
+
+24.git checkout master
+
+25. git merge bug2
+
+26. git push origin --all
+
+27. git push origin bug2 --force
+
+28. notepad logs.txt
+git add logs.txt
+notepad 203113.txt
+git add 203113.txt
+git commit -m "Final commit"
